@@ -7,7 +7,7 @@ This template is used by [nowa init](https://github.com/nowa-webpack/nowa-init).
 ## Usage
 
 ```
-nowa init **
+nowa init https://github.com/guyunxiang32/template-cg/archive/master.zip
 ```
 
 ## Changes
