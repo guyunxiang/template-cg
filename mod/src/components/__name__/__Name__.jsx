@@ -20,13 +20,12 @@ class <%- Name %> extends React.Component {
   }
 }
 
+<%- Name %>.propTypes = {
+
+};
 
 <%- Name %>.defaultProps ={
 
-}
-
-<%- Name %>.propTypes = {
-  
-}
+};
 
 export default <%- Name %>;

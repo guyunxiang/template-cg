@@ -9,12 +9,20 @@ exports.prompts = [
   {
     name: 'SPA',
     type: 'confirm',
-    message: 'Do you want SPA feature?'
+    message: 'Do you want SPA feature?',
+    default: false,
   },
   {
     name: 'i18n',
     type: 'confirm',
-    message: 'Do you want i18n feature?'
+    message: 'Do you want i18n feature?',
+    default: true,
+  },
+  {
+    name: 'approveflow',
+    type: 'confirm',
+    message: 'Do you want approve-flow component?',
+    default: false,
   }
 ];
 
