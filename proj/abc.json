@@ -1,0 +1,28 @@
+{
+  "name": "<%- name %>",
+  "options": {
+    "type": "uxcore",
+    "template": "<%- template %>",
+    "npm": "<%- npm %>",
+    "vars": {
+      <% if (i18n) { %>"locale": "zh-cn",
+      <% } %>"__LOCAL__": true
+    },
+    "buildvars": {
+      "__LOCAL__": [false]<% if (i18n) { %>,
+      "locale": [ "zh-cn", "en" ]<% } %>
+    },
+    "pages": <%= !SPA %>,
+    "mockapi": {
+      "/mock/query/getSomeInfo.json": "mock/query/getSomeInfo.js"
+    }<% if (libraries) { %>,
+    "libraries": {
+      "Uxcore": {
+        "output": "uxcore.js",
+        "mappings": {
+          "Table": "uxcore-table@~1.9.0"
+        }
+      }
+    }<% } %>
+  }
+}

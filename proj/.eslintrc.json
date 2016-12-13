@@ -1,0 +1,13 @@
+{
+  "extends": "eslint-config-ali",
+  "parser": "babel-eslint",
+  "env": {
+    "mocha": true
+  },
+  "globals": {
+    "GLOBAL": true
+  },
+  "rules": {
+    "max-len": 0
+  }
+}
