@@ -1,7 +1,7 @@
+import './<%- Name %>.less';
 <% if (i18n) { %>
 import i18n from 'i18n';
 <% } %>
-import './<%- Name %>.less';
 
 const { React } = window;
 class <%- Name %> extends React.Component {
@@ -11,7 +11,7 @@ class <%- Name %> extends React.Component {
   }
 
   render() {
-    let me = this;
+    const me = this;
     return (
       <div className="mod-<%= name %>">
         component <%= name %>
@@ -24,7 +24,7 @@ class <%- Name %> extends React.Component {
 
 };
 
-<%- Name %>.defaultProps ={
+<%- Name %>.defaultProps = {
 
 };
 
