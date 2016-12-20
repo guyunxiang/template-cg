@@ -15,6 +15,7 @@ exports.answers = function(answers, abc) {
     });
     answers.i18n = !!abc.options.vars.locale;
     answers.libraries = !!abc.options.libraries;
+    answers.approveflow = !!abc.options.approveflow;
     answers.suffix = suffixByVars(abc.options.vars, abc.options.buildvars);
     answers.SPA = !abc.options.pages;
     return answers;
