@@ -17,12 +17,6 @@ exports.prompts = [
     type: 'confirm',
     message: 'Do you want i18n feature?',
     default: true,
-  },
-  {
-    name: 'approveflow',
-    type: 'confirm',
-    message: 'Do you want approve-flow component?',
-    default: false,
   }
 ];
 

@@ -3,6 +3,11 @@ exports.prompts = [{
     name: 'store',
     type: 'confirm',
     message: 'Generate store & actions?'
+},{
+    name: 'approveflow',
+    type: 'confirm',
+    message: 'Do you want approve-flow component?',
+    default: false,
 }];
 
 // answer for mod
