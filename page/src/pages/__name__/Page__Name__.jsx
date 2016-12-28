@@ -1,9 +1,6 @@
-<% if (i18n) { %>
-import i18n from 'i18n';
-<% } %>
 import classnames from 'classnames';
-import './Page<%- Name %>.less';
-<% if (store) { %>
+import './Page<%- Name %>.less';<% if (i18n) { %>
+import i18n from 'i18n';<% } %><% if (store) { %>
 import Actions from './actions';
 import Store from './store';
 
@@ -42,9 +39,7 @@ class Page<%- Name %> extends React.Component {
   }
 }
 <% } %>
-
 <% if(SPA){ %>
-export default ReactRouter.withRouter(Page<%- Name %>);
-<% } else {%>
+export default ReactRouter.withRouter(Page<%- Name %>);<% } else {%>
 ReactDOM.render(<Page<%- Name %> />, document.getElementById('App'));
 <% } %>
