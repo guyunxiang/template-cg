@@ -1,7 +1,6 @@
-import classnames from 'classnames';
-<% if (i18n) { %>
-import i18n from 'i18n';
-<% } %>
+import classnames from 'classnames';<% if (i18n) { %>
+import i18n from 'i18n';<% } %>
+
 import './PageDemo.less';
 import Actions from './single-action';
 import Store from './store';
@@ -40,10 +39,7 @@ class PageDemo extends Reflux.Component {
     );
   }
 }
-
 <% if (SPA) { %>
-export default ReactRouter.withRouter(PageDemo); 
-<% } else { %>
+export default ReactRouter.withRouter(PageDemo);<% } else { %>
 ReactDOM.render(<PageDemo/>, document.getElementById('App'));
-export default PageDemo; 
-<% } %>
+export default PageDemo;<% } %>

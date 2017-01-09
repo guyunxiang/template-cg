@@ -40,11 +40,7 @@ class PageHome extends React.Component {
     );
   }
 }
-
 <% if (SPA) { %>
-export default ReactRouter.withRouter(PageHome); 
-<% } else { %>
+export default ReactRouter.withRouter(PageHome);<% } else { %>
 ReactDOM.render(<PageHome />, document.getElementById('App'));
-export default PageHome; 
-<% } %>
-
+export default PageHome;<% } %>

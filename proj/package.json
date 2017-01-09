@@ -22,6 +22,6 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
-    "eslint-config-ais": "0.0.16"
+    "eslint-config-ali": "^1.0.0"
   }
 }

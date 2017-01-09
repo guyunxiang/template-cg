@@ -1,8 +1,8 @@
-# cg line project template
+# cg-template project
 
 ---
 
-This template is used by [nowa init](https://github.com/nowa-webpack/nowa-init).
+This template is build by [nowa init](https://github.com/nowa-webpack/nowa-init).
 
 ## Usage
 
