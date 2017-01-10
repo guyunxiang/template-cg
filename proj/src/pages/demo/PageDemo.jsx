@@ -41,5 +41,5 @@ class PageDemo extends Reflux.Component {
 }
 <% if (SPA) { %>
 export default ReactRouter.withRouter(PageDemo);<% } else { %>
-ReactDOM.render(<PageDemo/>, document.getElementById('App'));
+ReactDOM.render(<PageDemo />, document.getElementById('App'));
 export default PageDemo;<% } %>
