@@ -1,1 +1,3 @@
-export default from './PageDemo.jsx';
+import PageDemo from './PageDemo.jsx';
+
+export default PageDemo;

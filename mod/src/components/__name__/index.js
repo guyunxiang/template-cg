@@ -1,1 +1,3 @@
-export default from './<%- Name %>.jsx';
+import <%- Name %> from './<%- Name %>.jsx';
+
+export default <%- Name %>;

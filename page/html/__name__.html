@@ -9,8 +9,8 @@
 <link rel="stylesheet" href="//g.alicdn.com/platform/finance_approve_flow/1.1.2/app.css">
 <% } %>
 <!-- 项目样式资源加载 -->
-<link rel="stylesheet" href="/app.css">
-<link rel="stylesheet" href="/<%= name %><%= suffix %>.css">
+<link rel="stylesheet" href="./app.css">
+<link rel="stylesheet" href="./<%= name %><%= suffix %>.css">
 
 <!-- 外部脚本资源加载 -->
 <!--[if lte IE 9]>
@@ -32,8 +32,8 @@
 <div id="App"></div>
 
 <!-- 项目脚本资源加载 -->
-<script src="/app<%= suffix %>.js"></script><% if (approveflow) { %>
+<script src="./app<%= suffix %>.js"></script><% if (approveflow) { %>
 <script src="//g.alicdn.com/platform/finance_approve_flow/1.1.2/app-zh-cn.js"></script><% } %>
-<script src="/<%= name %><%= suffix %>.js"></script>
+<script src="./<%= name %><%= suffix %>.js"></script>
 </body>
 </html>

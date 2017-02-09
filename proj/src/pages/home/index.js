@@ -1,1 +1,3 @@
-export default from './PageHome.jsx';
+import PageHome from './PageHome.jsx';
+
+export default PageHome;

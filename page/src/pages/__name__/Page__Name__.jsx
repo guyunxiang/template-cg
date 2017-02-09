@@ -1,3 +1,5 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import classnames from 'classnames';<% if (i18n) { %>
 import i18n from 'i18n';<% } %><% if (store) { %>
 
@@ -6,7 +8,7 @@ import './Page<%- Name %>.less';
 import Actions from './actions';
 import Store from './store';
 
-const { Reflux, <% if (SPA) { %>ReactRouter<% } else { %>ReactDOM<% } %><% if (approveflow) { %> , approveFlow<% } %> } = window;
+const { Reflux, <% if (SPA) { %>ReactRouter<% } if (approveflow) { %> , approveFlow<% } %> } = window;
 class Page<%- Name %> extends Reflux.Component {
 
   constructor(props) {
@@ -27,7 +29,7 @@ class Page<%- Name %> extends Reflux.Component {
 
 import './Page<%- Name %>.less';
 
-const { React, <% if (SPA) { %>ReactRouter<% } else { %>ReactDOM<% } %><% if (approveflow) { %> , approveFlow<% } %> } = window;
+const { <% if (SPA) { %>ReactRouter<% } if (approveflow) { %> , approveFlow<% } %> } = window;
 class Page<%- Name %> extends React.Component {
 
   constructor(props) {

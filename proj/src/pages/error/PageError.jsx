@@ -1,6 +1,8 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 import './PageError.less';
 
-const { React, ReactRouter } = window;
 class PageError extends React.Component {
 
   componentDidMount() {

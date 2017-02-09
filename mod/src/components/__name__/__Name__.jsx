@@ -1,9 +1,6 @@
+import React from 'react';
 import './<%- Name %>.less';
-<% if (i18n) { %>
-import i18n from 'i18n';
-<% } %>
 
-const { React } = window;
 class <%- Name %> extends React.Component {
 
   constructor(props) {
@@ -11,7 +8,6 @@ class <%- Name %> extends React.Component {
   }
 
   render() {
-    const me = this;
     return (
       <div className="mod-<%= name %>">
         component <%= name %>
